@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19454" systemVersion="22G5027e" minimumToolsVersion="Xcode 4.3" macOSVersion="13.5" iOSVersion="17.0">
+    <entity name="TodoItem" representedClassName="TodoItem" syncable="YES">
+        <attribute name="completedDate" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="dueDate" attributeType="Date" optional="NO" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="id" attributeType="UUID" optional="NO" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="isCompleted" attributeType="Boolean" defaultValueString="NO" optional="NO" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="taskDescription" attributeType="String" optional="NO" usesScalarValueType="NO" syncable="YES"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint constraintType="UNIQUE" constraintValues="id"/>
+        </uniquenessConstraints>
+    </entity>
+    <elements>
+        <element name="TodoItem" positionX="-63" positionY="-16" width="128" height="136"/>
+    </elements>
+</model>
