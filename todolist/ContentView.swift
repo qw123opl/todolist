@@ -167,8 +167,13 @@ struct ContentView: View {
 
     private func toggleComplete(item: TodoItem) {
         withAnimation {
-            item.isCompleted = true
-            item.completedDate = Date()
+            if item.isCompleted {
+                item.isCompleted = false
+                item.completedDate = nil
+            } else {
+                item.isCompleted = true
+                item.completedDate = Date()
+            }
 
             do {
                 try viewContext.save()
